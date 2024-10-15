@@ -1,7 +1,7 @@
 # Algoritmos
 Repositório de estudos para a disciplina de Algoritmos.
 
-##Aula 1
+## Aula 1
 print hello world
 
-##Aula 2
+## Aula 2
