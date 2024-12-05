@@ -31,7 +31,7 @@ int main(){
     while (op != 5)
     {
         printf("Digite a operacao que deseja fazer:\n\n");
-        printf("1- Inserir contato, 2 - Listar contatos, 3- Remover contato, 4- Atualizar contato, 5- Sair");
+        printf("1- Inserir contato, 2 - Listar contatos, 3- Remover contato, 4- Atualizar contato, 5- Sair\n");
         scanf("%d", &opEntrada);
         op += opEntrada;
 
@@ -49,6 +49,7 @@ int main(){
             printf("Numero: %s\n", contato1->numero);
 
             free(contato1);
+            op = 0;
         }
         
     }
