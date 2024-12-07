@@ -30,7 +30,7 @@ int main() {
     return 0;
 }
 
-// inserir
-// listar
+// inserir FEITO
+// listar FEITO
 // remover
 // atualizar
