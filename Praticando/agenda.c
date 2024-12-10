@@ -21,7 +21,7 @@ int main(){
     int opEntrada;
     int i= 0;
 
-    struct Contato agenda[100];
+    Contato agenda[100];
     int tamanho = sizeof(agenda);
 
     printf("Digite quantos contatos sua agenda tera: ");
