@@ -63,3 +63,73 @@ int main(){
     }
     
 }
+
+
+
+
+
+
+
+
+
+// ATUALIZADO:
+#include <stdio.h>
+
+struct Pessoa{
+    char nome[100];
+    int idade;
+    char tipoAtendimento[100];
+    char preferencia[100];
+};
+
+struct fila{
+    struct Pessoa pessoa;
+    struct Fila *proximo;
+};
+
+
+
+int main(){
+    int op = 0;
+    int num;
+
+    struct Pessoa filaNormal;
+    struct Pessoa filaPreferencial;
+
+
+
+    printf("\nBem vindo a fila de atendimento!\n");
+
+    while (op != 7){
+        printf("Escolha uma das operacoes:\n");
+        printf("1- Inserir na fila preferencial, 2- Inserir na fila normal\n");
+        printf("3- Remover da preferencial, 4- Remover da normal\n");
+        printf("5- Atender uma pessoa, 6- Listar as filas\n");
+        printf("7- Sair\n\n");
+        printf("Digite aqui: ");
+        scanf("%d", &num);
+        op += num;
+
+        if (op == 1){
+            char nome[100];
+            int idade;
+            char tipoAtendimento[100];
+            char preferencia[100];
+
+            printf("Digite o nome: ");
+            scanf("%s\n", nome);
+            printf("Digite a idade: ");
+            scanf("%d\n", &idade);
+            printf("Digite o tipo de atendimento: ");
+            scanf("%s\n", tipoAtendimento);
+            printf("Digite a preferência do usuário: ");
+            scanf("%s\n", preferencia);
+
+            printf("Nome: %s\n", nome);
+            printf("Idade: %d\n", idade)
+            op = 0;
+        }
+        
+    }
+    
+}
